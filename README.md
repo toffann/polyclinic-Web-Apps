@@ -1,3 +1,9 @@
+# 🏥 Poliklinik Web App
+
+A healthcare management system built with Laravel 13, featuring three roles: Admin, Doctor, and Patient.
+
+---
+
 ## 👥 Roles & Features
 
 - **Admin**: Full control over users, doctors, patients, polyclinics, schedules, and medicine inventory.
@@ -21,19 +27,3 @@
    git clone [https://github.com/toffann/polyclinic-Web-Apps.git](https://github.com/toffann/polyclinic-Web-Apps.git)
    cd poliklinik-app
    composer install && npm install
-Environment & Database
-
-Bash
-copy .env.example .env
-php artisan key:generate
-(Update your database details in .env)
-
-Migrate & Run
-
-Bash
-php artisan migrate --seed
-php artisan serve
-(Run npm run dev in a separate terminal for frontend assets)
-
-👨‍💻 Contributor
-Taufan Afandi (GitHub)
