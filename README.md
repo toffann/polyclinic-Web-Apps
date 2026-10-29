@@ -20,10 +20,5 @@ A healthcare management system built with Laravel 13, featuring three roles: Adm
 
 ---
 
-## ⚙️ Quick Setup
-
-1. **Clone & Install Dependencies**
-   ```bash
-   git clone [https://github.com/toffann/polyclinic-Web-Apps.git](https://github.com/toffann/polyclinic-Web-Apps.git)
-   cd poliklinik-app
-   composer install && npm install
+## 👨‍💻 Contributor
+Taufan Afandi - [Github Profile](https://github.com/toffann)
