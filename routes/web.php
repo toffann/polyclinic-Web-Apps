@@ -8,7 +8,7 @@ use App\Http\Controllers\Admin\DokterController;
 use App\Http\Controllers\Admin\PasienController;
 use App\Http\Controllers\Admin\ObatController;
 use App\Http\Controllers\Dokter\JadwalPeriksaController;
-
+use App\Http\Controllers\Pasien\PoliController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -45,4 +45,9 @@ Route::middleware(['auth', 'role:pasien'])->prefix('pasien')->group(function () 
     Route::get('/dashboard', function () {
         return view('pasien.dashboard');
     })->name('pasien.dashboard');
+
+    Route::get('/daftar', [PoliController::class, 'get'])->name('pasien.daftar');
+
+    Route::post('/daftar', [PoliController::class, 'submit'])
+        ->name('pasien.daftar.submit');
 });
